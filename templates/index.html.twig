@@ -8,7 +8,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Lhander</title>
+    <title>iTehnik</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -41,7 +41,7 @@
     <div class="row">
 
         <div class="logo">
-            <a href="index.html">Lhander</a>
+            <a href="index.html">iTehnik</a>
         </div>
 
         <nav id="main-nav-wrap">
@@ -72,22 +72,64 @@
 
             <div class="col-twelve">
 
-                <div class='video-link'>
-                    <a href="#video-popup"><img src="images/play-button.png" alt=""></a>
+                <div class="choice-wrap">
+                    <a class="button stroke choice first-choice" href="#qwiz-popup" title="">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
+                </div>
+                <div class="choice-wrap">
+                    <a class="button stroke choice second-choice" href="#qwiz-popup" title="">У меня есть 1С и мне хочется большего, чем сейчас</a>
+                </div>
+                <div class="choice-wrap">
+                    <a class="button stroke choice third-choice" href="#qwiz-popup" title="">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
                 </div>
 
-                <h5>Hello welcome to lhander.</h5>
+                <a id="open-contacts" href="#contact-popup" class="mfp-hide"></a>
+            </div>
+            <div class="col-twelve">
                 <h1>Our awesome app will make your life a lot easier.</h1>
 
                 <a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
-
             </div>
-
         </div>
     </div>
 
     <!-- Modal Popup
     ========================================================= -->
+
+    <form id="qwiz-popup" class="popup-modal mfp-hide">
+        <fieldset class="questions">
+
+            <p><input type="radio" name="answer" value="1">Вариант 1 текст текст текст текст текст текст</p>
+            <p><input type="radio" name="answer" value="2">Вариант 2 текст текст текст текст текст текст</p>
+            <p><input type="radio" name="answer" value="3">Вариант 3 текст текст текст текст текст текст</p>
+
+            <a href="#" class="open-contacts">Дальше</a>
+        </fieldset>
+        <a class="close-popup">Закрыть</a>
+    </form> <!-- /qwiz-popup -->
+
+    <div id="contact-popup" class="popup-modal mfp-hide">
+        <fieldset class="questions">
+            <ol class="ltnone">
+                <li>
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" placeholder="Представьтесь пожалуйста" required="">
+                </li>
+                <li>
+                    <label for="email">Адрес электронной почты</label>
+                    <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+                </li>
+                <li>
+                    <label for="phone">Телефон</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+74950000000" required="">
+                </li>
+                <li>
+                    <label for="textarea">Комментарий</label>
+                    <textarea id="textarea" style="width:450px"></textarea>
+                </li>
+            </ol>
+        </fieldset>
+        <a class="close-popup">Close</a>
+    </div> <!-- /contact-popup -->
 
     <div id="video-popup" class="popup-modal mfp-hide">
 

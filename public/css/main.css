@@ -559,7 +559,7 @@ select {
 	color: #252525;
 }
 textarea {
-	min-height: 25rem;
+	min-height: 10rem;
 }
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -2370,3 +2370,37 @@ footer ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.intro-content .choice {
+	font-family: verdana;
+	text-transform: none;
+	font-size: medium;
+	white-space: pre-wrap;
+}
+.intro-content .first-choice {
+	height: 10rem;
+	line-height: 3rem;
+}
+.intro-content .second-choice {
+	height: 13rem;
+	line-height: 3rem;
+}
+.intro-content .third-choice {
+	height: 10rem;
+	line-height: 3rem;
+}
+.col-twelve .choice-wrap{
+	width: 300px;
+	float: left;
+	margin: 0 25px;
+}
+.questions input[type="radio"]{
+	margin-left: 1.7rem;
+	margin-right: 1rem;
+}
+.ltnone{
+	list-style: none;
+}
+.questions p{
+	margin-bottom: 1rem;
+}

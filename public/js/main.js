@@ -193,6 +193,30 @@
 	/*	Modal Popup
 	------------------------------------------------------ */
 
+    $('.choice-wrap a.first-choice').magnificPopup({
+
+        type:'inline',
+        fixedContentPos: false,
+        removalDelay: 200,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade',
+		callbacks:{
+            afterClose: function() {
+                $('#open-contacts').click();
+			}
+		}
+    });
+
+    $('#open-contacts').magnificPopup({
+
+        type:'inline',
+        fixedContentPos: false,
+        removalDelay: 200,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+
+    });
+
     $('.video-link a').magnificPopup({
 
        type:'inline',
