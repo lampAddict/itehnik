@@ -28,7 +28,7 @@
 	/*----------------------------------------------------*/
 	/*	Sticky Navigation
 	------------------------------------------------------*/
-   $(window).on('scroll', function() {
+	$(window).on('scroll', function() {
 
 		var y = $(window).scrollTop(),
 		    topBar = $('header');
@@ -45,7 +45,7 @@
 
 	/*-----------------------------------------------------*/
   	/* Mobile Menu
-   ------------------------------------------------------ */  
+	------------------------------------------------------ */
    var toggleButton = $('.menu-toggle'),
        nav = $('.main-navigation');
 
@@ -72,7 +72,7 @@
   	});
 
 
-   /*----------------------------------------------------*/
+	/*----------------------------------------------------*/
   	/* Highlight the current section in the navigation bar
   	------------------------------------------------------*/
 	var sections = $("section"),
@@ -118,6 +118,11 @@
 	      touch: true,
 	   });
 
+
+        var slider = $('.Wallop');
+        new Wallop(slider[0], {
+            carousel: false
+        });
    });
 
 
@@ -140,7 +145,7 @@
   	});  
   
 
-   /*----------------------------------------------------*/
+	/*----------------------------------------------------*/
 	/*  Placeholder Plugin Settings
 	------------------------------------------------------*/ 
 
@@ -180,7 +185,7 @@
 	  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 	  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 	  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-	}
+	};
 
 
 	/*---------------------------------------------------- */
@@ -192,30 +197,6 @@
  	/*---------------------------------------------------- */
 	/*	Modal Popup
 	------------------------------------------------------ */
-
-    $('.choice-wrap a.first-choice').magnificPopup({
-
-        type:'inline',
-        fixedContentPos: false,
-        removalDelay: 200,
-        showCloseBtn: false,
-        mainClass: 'mfp-fade',
-		callbacks:{
-            afterClose: function() {
-                $('#open-contacts').click();
-			}
-		}
-    });
-
-    $('#open-contacts').magnificPopup({
-
-        type:'inline',
-        fixedContentPos: false,
-        removalDelay: 200,
-        showCloseBtn: false,
-        mainClass: 'mfp-fade'
-
-    });
 
     $('.video-link a').magnificPopup({
 
@@ -255,5 +236,40 @@
 		}		
 
 	});		
+
+	$('a.choice').click(function(e){
+		var $this = $(this);
+
+		var choice = parseInt( $this.attr('data-choice') );
+		if( choice === 1 ){
+			for(var i = 0; i < 3; i++){
+                $('#step2'+(i+1)).text( quizOptions[ choice - 1 ][ i ] );
+			}
+		}
+
+		$('.Wallop-buttonNext').click();
+
+	});
+
+	var quizOptions = [
+		 [
+			  "Мой приоритет: низкая стоимость, максимум своими силами, быстро."
+			 ,"Мне нужно понять что какого обслуживание какого качества я могу получить за свои деньги."
+			 ,"Я - энтузиаст.  Меня интересует качество прежде всего."
+		 ]
+		,[
+			 "Подрядчика нет, или у нас с подрядчиком \"всё плохо\"."
+			,"Мне интересно грамотное использование уже имеющегося функционала."
+            ,"Мне требуется развитие или пересмотр имеющейся системы."
+
+		]
+        ,[
+			 "Мое понимание не требует формализации. Обсудили, оценили, поехали."
+			,"У меня описаны требования. Нужно грамотно исполнить."
+			,"Мне нужно, чтобы вы сами собрали информацию с ответственных лиц, оценили ситуацию и предложили решение."
+		]
+	];
+
+
 
 })(jQuery);

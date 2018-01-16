@@ -21,10 +21,13 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/wallop.css">
+    <link rel="stylesheet" href="css/wallop--slide.css">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <script src="js/Wallop.min.js"></script>
 
     <!-- favicons
      ================================================== -->
@@ -72,21 +75,49 @@
 
             <div class="col-twelve">
 
-                <div class="choice-wrap">
-                    <a class="button stroke choice first-choice" href="#qwiz-popup" title="">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
-                </div>
-                <div class="choice-wrap">
-                    <a class="button stroke choice second-choice" href="#qwiz-popup" title="">У меня есть 1С и мне хочется большего, чем сейчас</a>
-                </div>
-                <div class="choice-wrap">
-                    <a class="button stroke choice third-choice" href="#qwiz-popup" title="">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
+                <div class="Wallop Wallop--slide">
+                    <div class="Wallop-list">
+                        <div class="Wallop-item step1">
+
+                            <div class="choice-wrap">
+                                <a class="button stroke choice first-choice" href="#" title="" data-choice="1">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
+                            </div>
+                            <div class="choice-wrap">
+                                <a class="button stroke choice second-choice" href="#" title="" data-choice="2">У меня есть 1С и мне хочется большего, чем сейчас</a>
+                            </div>
+                            <div class="choice-wrap">
+                                <a class="button stroke choice third-choice" href="#" title="" data-choice="3">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
+                            </div>
+
+                        </div>
+                        <div class="Wallop-item step2">
+
+                            <div class="choice-wrap">
+                                <a id="step21" class="button stroke choice first-choice" href="#" title="" data-choice="4">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
+                            </div>
+                            <div class="choice-wrap">
+                                <a id="step22" class="button stroke choice second-choice" href="#" title="" data-choice="5">У меня есть 1С и мне хочется большего, чем сейчас</a>
+                            </div>
+                            <div class="choice-wrap">
+                                <a id="step23" class="button stroke choice third-choice" href="#" title="" data-choice="6">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
+                            </div>
+
+                        </div>
+                        <div class="Wallop-item">
+
+                        </div>
+                    </div>
+                    <button class="Wallop-buttonPrevious">Previous</button>
+                    <button class="Wallop-buttonNext">Next</button>
                 </div>
 
-                <a id="open-contacts" href="#contact-popup" class="mfp-hide"></a>
+
+
+
+
             </div>
             <div class="col-twelve">
                 <h1>Our awesome app will make your life a lot easier.</h1>
-
                 <a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
             </div>
         </div>
