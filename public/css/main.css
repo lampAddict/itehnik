@@ -2402,6 +2402,13 @@ footer ul li {
 	list-style: none;
     margin-left: none;
 }
+.ltnone li{
+    float:left;
+    margin-left: 1rem;
+}
+.ltnone textarea{
+    width:655px
+}
 .questions p{
 	margin-bottom: 1rem;
 }
@@ -2418,4 +2425,15 @@ footer ul li {
     padding: 1rem 1rem;
     line-height: 2rem;
     height: 4rem;
+}
+.form_wrap{
+    width: 710px;
+    margin:0 auto;
+}
+.form_wrap_wrap{
+    width: 1300px;
+}
+.btnGoBack{
+    float: right;
+    margin-right: 25px;
 }
