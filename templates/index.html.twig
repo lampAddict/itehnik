@@ -72,60 +72,74 @@
 
     <div class="intro-content">
         <div class="row">
-
+            <div class="col-twelve">
+                <h1>Здравствуйте, пройдите небольшой тест ниже и мы посмотрим чем мы можем вам помочь.</h1>
+            </div>
+        </div>
+        <div class="row" style="height:800px">
             <div class="col-twelve">
 
                 <div class="Wallop Wallop--slide">
                     <div class="Wallop-list">
-                        <div class="Wallop-item step1">
+                        <div class="Wallop-item">
 
                             <div class="choice-wrap">
-                                <a class="button stroke choice first-choice" href="#" title="" data-choice="1" data-step="2">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
+                                <a class="button stroke choice first-choice" href="#" title="" data-choice="low" data-step="2">Я не знаю что мне нужно (и нужно ли) от 1С и мне требуется консультация</a>
                             </div>
                             <div class="choice-wrap">
-                                <a class="button stroke choice second-choice" href="#" title="" data-choice="2" data-step="2">У меня есть 1С и мне хочется большего, чем сейчас</a>
+                                <a class="button stroke choice second-choice" href="#" title="" data-choice="medium" data-step="2">У меня есть 1С и мне хочется большего, чем сейчас</a>
                             </div>
                             <div class="choice-wrap">
-                                <a class="button stroke choice third-choice" href="#" title="" data-choice="3" data-step="2">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
-                            </div>
-
-                        </div>
-                        <div class="Wallop-item step2">
-
-                            <div class="choice-wrap">
-                                <a id="step21" class="button stroke choice first-choice" href="#" title="" data-choice="4" data-step="3"></a>
-                            </div>
-                            <div class="choice-wrap">
-                                <a id="step22" class="button stroke choice second-choice" href="#" title="" data-choice="5" data-step="3"></a>
-                            </div>
-                            <div class="choice-wrap">
-                                <a id="step23" class="button stroke choice third-choice" href="#" title="" data-choice="6" data-step="3"></a>
+                                <a class="button stroke choice third-choice" href="#" title="" data-choice="pro" data-step="2">Я четко понимаю, что хочу от автоматизации на 1С и мне нужно найти толкового подрядчика </a>
                             </div>
 
                         </div>
                         <div class="Wallop-item">
+
                             <div class="choice-wrap">
-                                <a class="button stroke choice first-choice" href="#" title=""></a>
+                                <a id="step21" class="button stroke choice first-choice" href="#" title="" data-choice="low" data-prevchoice="" data-step="3"></a>
                             </div>
                             <div class="choice-wrap">
-                                <a id="step31" class="button stroke choice second-choice" href="#" title=""></a>
+                                <a id="step22" class="button stroke choice second-choice" href="#" title="" data-choice="medium" data-prevchoice="" data-step="3"></a>
                             </div>
                             <div class="choice-wrap">
-                                <a class="button stroke choice third-choice" href="#" title=""></a>
+                                <a id="step23" class="button stroke choice third-choice" href="#" title="" data-choice="pro" data-prevchoice="" data-step="3"></a>
                             </div>
+
+                        </div>
+                        <div class="Wallop-item">
+
+                                <p id="step3"></p>
+                                <fieldset class="questions">
+                                    <ol class="ltnone">
+                                        <li>
+                                            <label for="name">Имя</label>
+                                            <input id="name" name="name" type="text" placeholder="Представьтесь пожалуйста" required="">
+                                        </li>
+                                        <li>
+                                            <label for="email">Адрес электронной почты</label>
+                                            <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+                                        </li>
+                                        <li>
+                                            <label for="phone">Телефон</label>
+                                            <input id="phone" name="phone" type="tel" placeholder="+74950000000" required="">
+                                        </li>
+                                        <li>
+                                            <label for="textarea">Комментарий</label>
+                                            <textarea id="textarea" style="width:450px"></textarea>
+                                        </li>
+                                    </ol>
+                                </fieldset>
+
                         </div>
                     </div>
-                    <button class="Wallop-buttonPrevious">Previous</button>
-                    <button class="Wallop-buttonNext">Next</button>
+                    <a class="button stroke Wallop-buttonPrevious mfp-hide">Назад</a>
+                    <button class="Wallop-buttonNext mfp-hide">Next</button>
                 </div>
-
-
-
-
-
             </div>
+        </div>
+        <div class="row">
             <div class="col-twelve">
-                <h1>Our awesome app will make your life a lot easier.</h1>
                 <a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
             </div>
         </div>
