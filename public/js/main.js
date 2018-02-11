@@ -124,12 +124,33 @@
             carousel: false
         });
 
+        var $name = $('#name'),
+            $email = $('#email'),
+            $phone = $('#phone'),
+            $comment = $('#comment');
+
         wallop.on('change', function(event) {
             // event.detail.wallopEl
             // => <div class="Wallop">…</div>
 
             // event.detail.currentItemIndex
             // => number
+
+            //wallop bugfix, last page form elements shows up on previous pages
+            if( event.detail.currentItemIndex < 2 ){
+                //if it is not last choice hide
+                $name.hide();
+                $email.hide();
+                $phone.hide();
+                $comment.hide();
+            }else{
+                //show form elements on last page
+                $name.show();
+                $email.show();
+                $phone.show();
+                $comment.show();
+            }
+
             var $btnPrev, $btnSend;
             $btnPrev = $('.Wallop-buttonPrevious');
             if( event.detail.currentItemIndex > 0 ){
@@ -326,15 +347,15 @@
 
             "1": {
                 "choice": "Мое понимание не требует формализации. Обсудили, оценили, поехали."
-                ,"answer": "Надо встречаться и обсуждать."
+                ,"answer": "Надо встречаться и обсуждать. Оставьте, пожалуйста, ваши контакты."
             }
             ,"2": {
                 "choice": "У меня описаны требования. Нужно грамотно исполнить."
-                ,"answer": "Надо встречаться и обсуждать."
+                ,"answer": "Надо встречаться и обсуждать. Оставьте, пожалуйста, ваши контакты."
             }
             ,"3": {
                 "choice": "Мне нужно, чтобы вы сами собрали информацию с ответственных лиц, оценили ситуацию и предложили решение."
-                ,"answer": "Надо встречаться и обсуждать."
+                ,"answer": "Надо встречаться и обсуждать. Оставьте, пожалуйста, ваши контакты."
             }
         }
 };

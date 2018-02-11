@@ -115,7 +115,7 @@ h5, .h05, h6, .h06 {
 h1, .h01 {
 	font-size: 3.1rem;
 	line-height: 1.35;
-	letter-spacing: -.1rem;
+	letter-spacing: 0.1rem;
 }
 @media only screen and (max-width:600px) {
 	h1, .h01 {
@@ -360,7 +360,7 @@ button, .button {
 	margin-bottom: 1.2;
 }
 fieldset {
-	margin-bottom: 1.5rem;
+	margin-bottom: .5rem;
 }
 input,
 textarea,
@@ -917,6 +917,7 @@ a.menu-toggle {
 }
 .main-navigation li.current a {
 	color: #FFFFFF;
+    font-weight: bold;
 }
 .main-navigation li.current a::after {
 	position: absolute;
@@ -1207,7 +1208,7 @@ a.menu-toggle {
 	color: #FFFFFF;
 	height: 6.6rem;
 	line-height: 6rem;
-	padding: 0 3rem !important;
+	padding: 0 3.5rem !important;
 	margin-top: 1.8rem;
 	font-family: "raleway-heavy", sans-serif;
 	font-size: 1.4rem;
@@ -2382,11 +2383,11 @@ footer ul li {
 	line-height: 3rem;
 }
 .intro-content .second-choice {
-	height: 13rem;
+	height: auto;
 	line-height: 3.9rem;
 }
 .intro-content .third-choice {
-	height: 10rem;
+	height: auto;
 	line-height: 3rem;
 }
 .col-twelve .choice-wrap{
@@ -2436,4 +2437,20 @@ footer ul li {
 .btnGoBack{
     float: right;
     margin-right: 25px;
+}
+.h550{
+    height: 550px;
+}
+.text{
+    color: white;
+    font-size: 2.2rem;
+}
+#btnSend{
+    margin-top: .5rem;
+}
+.mt150{
+    margin-top: 150px;
+}
+.Wallop-list{
+    height: 448px;
 }
