@@ -1141,6 +1141,22 @@ a.menu-toggle {
 }
 
 
+@media only screen and (max-width:500px) {
+	.Wallop-list {
+		min-height: 750px !important;
+	}
+	.form_wrap_wrap {
+		width: 0 !important;
+	}
+	.form_wrap {
+		margin: 0 auto;
+		width: 0 !important;
+	}
+	.ltnone textarea {
+		width: 212px !important;
+	}
+}
+
 /** 
  * ===================================================================
  * intro section
@@ -2449,7 +2465,7 @@ footer ul li {
     margin-top: .5rem;
 }
 .mt150{
-    margin-top: 150px;
+    margin-top: 15px;
 }
 .Wallop-list{
     height: 448px;
