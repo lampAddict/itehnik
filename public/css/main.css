@@ -1185,7 +1185,7 @@ a.menu-toggle {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4.5em;
+	margin-top: 3rem;
 }
 .intro-content h5 {
 	color: rgba(255, 255, 255, 0.6);
@@ -2453,4 +2453,7 @@ footer ul li {
 }
 .Wallop-list{
     height: 448px;
+}
+.mt45{
+	margin-top: 16rem;
 }
