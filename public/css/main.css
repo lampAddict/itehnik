@@ -18,8 +18,8 @@
  * 09. process section
  * 10. features section
  * 11. pricing section
- * 12. testimomials section 
- * 13. faq section 
+ * 12. testimomials section
+ * 13. faq section
  *	14. ad-section 
  *	15. call-to-action section
  *	16. footer
@@ -1143,7 +1143,7 @@ a.menu-toggle {
 
 @media only screen and (max-width:500px) {
 	.Wallop-list {
-		min-height: 750px !important;
+		min-height: 560px !important;
 	}
 	.form_wrap_wrap {
 		width: 0 !important;
