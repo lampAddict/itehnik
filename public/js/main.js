@@ -9,21 +9,20 @@
 
     "use strict";
 
+    var $surveyResult = $('#step3');
+
     /*---------------------------------------------------- */
     /* Preloader
      ------------------------------------------------------ */
     $(window).load(function () {
-
         // will first fade out the loading animation
         $("#loader").fadeOut("slow", function () {
-
             // will fade out the whole DIV that covers the website.
             $("#preloader").delay(300).fadeOut("slow");
-
         });
 
-    })
-
+        $surveyResult.hide();
+    });
 
     /*----------------------------------------------------*/
     /*	Sticky Navigation
@@ -40,8 +39,8 @@
             topBar.removeClass('sticky');
         }
 
-    });
 
+    });
 
     /*-----------------------------------------------------*/
     /* Mobile Menu
@@ -166,10 +165,14 @@
             if( event.detail.currentItemIndex < 2 ){
                 if( !$btnSend.hasClass('mfp-hide') )
                     $btnSend.addClass('mfp-hide');
+
+                $surveyResult.hide();
             }
             else{
                 if( $btnSend.hasClass('mfp-hide') )
                     $btnSend.removeClass('mfp-hide');
+
+                $surveyResult.fadeIn("slow");;
             }
         });
 
