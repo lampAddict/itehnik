@@ -1486,6 +1486,13 @@ a.menu-toggle {
 	margin-bottom: .3rem;
 }
 
+#process .text{
+	color: black;
+}
+
+.process-content .row{
+	margin-top: 10px;
+}
 /**
  * responsive:
  * process
