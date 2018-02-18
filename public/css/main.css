@@ -746,17 +746,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 	overflow: hidden;
 }
+
 .section-intro .with-bottom-line::after {
 	display: block;
 	background-color: #05bca9;
-	width: 120px;
 	height: 3px;
 	content: '\0020';
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -60px;
+	margin: 0 auto;
 }
+
+#process .section-intro .with-bottom-line::after {
+	width: 400px;
+}
+
+#features .section-intro .with-bottom-line::after {
+	width: 720px;
+}
+
+#testimonials .section-intro .with-bottom-line::after {
+	 width: 760px;
+}
+
+#faq .section-intro .with-bottom-line::after {
+	width: 580px;
+}
+
 @media only screen and (max-width:600px) {
 	section .h01 {
 		font-size: 2.5rem;
@@ -776,6 +790,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	.section-intro h1 {
 		font-size: 4.2rem;
 	}
+	#step3{
+		max-height: 100% !important;
+	}
 }
 @media only screen and (max-width:600px) {
 	.section-intro h1 {
@@ -785,10 +802,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		font-size: 1.5rem;
 		letter-spacing: .3rem;
 	}
+	#step3{
+		max-height: 100% !important;
+	}
 }
 @media only screen and (max-width:400px) {
 	.section-intro h1 {
 		font-size: 3.6rem;
+	}
+	#step3{
+		max-height: 100% !important;
 	}
 }
 
@@ -2479,4 +2502,15 @@ footer ul li {
 }
 .mt45{
 	margin-top: 16rem;
+}
+#step3{
+	max-height: 105px;
+	padding: 10px;
+	background-color: #05bca9;
+}
+#features .section-intro {
+	max-width: 770px;
+}
+#testimonials .section-intro {
+	max-width: 800px;
 }
