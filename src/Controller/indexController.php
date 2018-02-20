@@ -19,7 +19,7 @@ class indexController extends Controller
     public function indexAction()
     {
 
-        return $this->render('index.html.twig', array(
+        return $this->render('index.html.twig', array('year'=>date('Y')
         ));
     }
 }
