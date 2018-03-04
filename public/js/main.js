@@ -251,7 +251,7 @@
     /*	Modal Popup
      ------------------------------------------------------ */
 
-    $('.video-link a').magnificPopup({
+    $('#personalDataPopup').magnificPopup({
 
         type: 'inline',
         fixedContentPos: false,
