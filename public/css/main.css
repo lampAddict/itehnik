@@ -81,7 +81,7 @@ body {
  */
 
 a, a:visited {
-	color: #0087cc;
+	color: #08B6FF;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -2536,6 +2536,7 @@ footer ul li {
     position: absolute;
     left: 100px;
     top: 33%;
+	font-weight: bold;
 }
 @media only screen and (max-width:400px) {
     .head-contacts {
