@@ -79,7 +79,8 @@ class IndexController extends Controller
             $err = $e->getMessage();
         }
 
-        $response['result'] = $result;
+        if( $result )
+            $response['result'] = true;
         if( isset($err) ){
             $response['error'] = $err;
         }

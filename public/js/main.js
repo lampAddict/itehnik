@@ -156,7 +156,11 @@
                 data: params
             })
             .done(function( response ){
+
                 console.log(response);
+                if( response.result == false ){
+
+                }
 
                 if( response.result == false ){
                     for( var ind in response.error_elements ){

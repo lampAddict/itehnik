@@ -69,7 +69,7 @@ html, body {
 }
 body {
 	background: #14181E;
-	font-family: "merriweather-regular", serif;
+	font-family: SF-UI-Text-Regular, sans-serif;
 	font-size: 1.6rem;
 	line-height: 3rem;
 	color: #737373;
@@ -2546,4 +2546,41 @@ footer ul li {
 .errorMessage{
 	background-color: white;
 	margin-bottom: 10px;
+}
+
+.popup-modal{
+	padding: 3em 1.9em 2.5em;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	display: block;
+	max-width: 650px;
+}
+.popup-modal h4 {
+	text-align: center;
+	margin-bottom: 1.6em;
+}
+.popup-modal .security-text{
+	max-height: 250px;
+	overflow-y: scroll;
+	text-align: left;
+}
+.popup-modal .security-text ul {
+	list-style: none;
+}
+.popup-modal .security-text ul li {
+	padding-bottom: 5px;
+}
+.popup-modal .text-mute {
+	font-size: .8em;
+	line-height: 1.6;
+	font-family: SF-UI-Text-Light;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.text-mute {
+	color: #646566;
+}
+.popup-modal h4{
+	font-size: 2.7rem;
 }
