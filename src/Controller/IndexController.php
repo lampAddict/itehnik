@@ -56,10 +56,10 @@ class IndexController extends Controller
             $error_elements[] = "email";
         }
 
-        if( $comment == '' ){
-            $err .= "поле 'Комментарий' не заполнено, ";
-            $error_elements[] = "comment";
-        }
+//        if( $comment == '' ){
+//            $err .= "поле 'Комментарий' не заполнено, ";
+//            $error_elements[] = "comment";
+//        }
 
         if( strlen($err) > 0 ){
             $err = rtrim($err, ", ");
@@ -79,7 +79,8 @@ class IndexController extends Controller
             $err = $e->getMessage();
         }
 
-        if( $result )
+        $response['result'] = false;
+        if( $result instanceof \StdClass )
             $response['result'] = true;
         if( isset($err) ){
             $response['error'] = $err;

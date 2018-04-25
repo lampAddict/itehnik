@@ -156,10 +156,10 @@
                 data: params
             })
             .done(function( response ){
-
+                
                 console.log(response);
-                if( response.result == false ){
-
+                if( response.result == true ){
+                    $('#confirmationBtn').click();
                 }
 
                 if( response.result == false ){
@@ -257,6 +257,16 @@
     /*---------------------------------------------------- */
     /*	Modal Popup
      ------------------------------------------------------ */
+
+    $('#confirmationBtn').magnificPopup({
+
+        type: 'inline',
+        fixedContentPos: false,
+        removalDelay: 200,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+
+    });
 
     $('#personalDataPopup').magnificPopup({
 
