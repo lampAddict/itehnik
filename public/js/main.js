@@ -123,7 +123,7 @@
             carousel: false
         });
 
-        var  $name = $('#name')
+        var  $name = $('#pname')
             ,$email = $('#email')
             ,$phone = $('#phone')
             ,$comment = $('#comment')
@@ -134,19 +134,20 @@
         //contact form, send info routine
         $btnSend.click(function(e){
 
-            var  url = 'sendmsg'
+            $name.css("background-color", "white");
+            $email.css("background-color", "white");
+            $phone.css("background-color", "white");
+            $comment.css("background-color", "white");
+
+            var  url = 'ajax_message'
                 ,params
-                ,pname = $('#name').val()
-                ,email = $('#email').val()
-                ,phone = $('#phone').val()
-                ,comment = $('#comment').text()
             ;
 
             params = {
-                 name: pname
-                ,email: email
-                ,phone: phone
-                ,comment: comment
+                 name: $name.val()
+                ,email: $email.val()
+                ,phone: $phone.val()
+                ,comment: $comment.val()
             };
 
             $.ajax({
@@ -154,14 +155,24 @@
                 url: url,
                 data: params
             })
-                .done(function( response, status, request ){
-                    console.log(response);
-                })
-                .fail(function( response ){
-                    console.log('FAILED to prepare report');
-                    console.log(response);
-                });
+            .done(function( response ){
+                console.log(response);
 
+                if( response.result == false ){
+                    for( var ind in response.error_elements ){
+                        if( $('#' + response.error_elements[ind]) )
+                            $('#' + response.error_elements[ind]).css("background-color", "lightpink");
+                    }
+
+                    if( response.error ){
+                        $('#errorMessage').text(response.error);
+                    }
+                }
+            })
+            .fail(function( response ){
+                console.log('FAILED to prepare report');
+                console.log(response);
+            });
         });
 
         wallop.on('change', function(event) {
@@ -170,6 +181,8 @@
 
             // event.detail.currentItemIndex
             // => number
+
+            if( event.target.nodeName.toLowerCase() != "div" )return;
 
             //wallop bugfix, last page form elements shows up on previous pages
             if( event.detail.currentItemIndex < 2 ){
@@ -205,7 +218,7 @@
                 if( $btnSend.hasClass('mfp-hide') )
                     $btnSend.removeClass('mfp-hide');
 
-                $surveyResult.fadeIn("slow");;
+                $surveyResult.fadeIn("slow");
             }
         });
 

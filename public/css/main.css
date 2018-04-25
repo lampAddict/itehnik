@@ -2543,3 +2543,7 @@ footer ul li {
         font-size: 1.8rem;
     }
 }
+.errorMessage{
+	background-color: white;
+	margin-bottom: 10px;
+}

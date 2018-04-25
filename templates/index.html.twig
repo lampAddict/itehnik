@@ -109,8 +109,8 @@
                                     <fieldset class="questions">
                                         <ol class="ltnone">
                                             <li>
-                                                <label for="name">Имя</label>
-                                                <input id="name" name="name" type="text" placeholder="Представьтесь пожалуйста" required="">
+                                                <label for="pname">Имя</label>
+                                                <input id="pname" name="pname" type="text" placeholder="Представьтесь пожалуйста" required="">
                                             </li>
                                             <li>
                                                 <label for="email">Адрес электронной почты</label>
@@ -126,6 +126,7 @@
                                             </li>
                                         </ol>
                                     </fieldset>
+                                    <div id="errorMessage mfp-hide" class="errorMessage"></div>
                                     <a id="btnSend" class="button stroke mfp-hide">Отправить</a>
                                 </div>
                             </div>
@@ -143,45 +144,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal Popup
-    ========================================================= -->
-
-    <form id="qwiz-popup" class="popup-modal mfp-hide">
-        <fieldset class="questions">
-
-            <p><input type="radio" name="answer" value="1">Вариант 1 текст текст текст текст текст текст</p>
-            <p><input type="radio" name="answer" value="2">Вариант 2 текст текст текст текст текст текст</p>
-            <p><input type="radio" name="answer" value="3">Вариант 3 текст текст текст текст текст текст</p>
-
-            <a href="#" class="open-contacts">Дальше</a>
-        </fieldset>
-        <a class="close-popup">Закрыть</a>
-    </form> <!-- /qwiz-popup -->
-
-    <div id="contact-popup" class="popup-modal mfp-hide">
-        <fieldset class="questions">
-            <ol class="ltnone">
-                <li>
-                    <label for="name">Имя</label>
-                    <input id="name" name="name" type="text" placeholder="Представьтесь пожалуйста" required="">
-                </li>
-                <li>
-                    <label for="email">Адрес электронной почты</label>
-                    <input id="email" name="email" type="email" placeholder="mailbox@domain.com" required="">
-                </li>
-                <li>
-                    <label for="phone">Телефон</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+74950000000" required="">
-                </li>
-                <li>
-                    <label for="comment">Комментарий</label>
-                    <textarea id="comment" style="width:450px"></textarea>
-                </li>
-            </ol>
-        </fieldset>
-        <a class="close-popup">Close</a>
-    </div> <!-- /contact-popup -->
 </section> <!-- /intro -->
 
 
