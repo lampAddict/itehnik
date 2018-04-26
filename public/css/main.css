@@ -2522,11 +2522,11 @@ footer ul li {
 }
 #contacts .bgrid p:first-child{
     margin-bottom: 0;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
 }
 
 #contacts a{
-    color: #05bca9;
+    color: black;
     font-weight: bold;
 }
 

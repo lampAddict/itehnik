@@ -174,7 +174,7 @@
                 }
             })
             .fail(function( response ){
-                console.log('FAILED to prepare report');
+                console.log('FAILED to receive request response');
                 console.log(response);
             });
         });
