@@ -156,7 +156,7 @@
                 data: params
             })
             .done(function( response ){
-                
+
                 console.log(response);
                 if( response.result == true ){
                     $('#confirmationBtn').click();
