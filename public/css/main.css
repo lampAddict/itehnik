@@ -1847,7 +1847,7 @@ a.menu-toggle {
 }
 #testimonials .flex-container {
 	width: 80%;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 #testimonial-slider {
@@ -1855,10 +1855,10 @@ a.menu-toggle {
 	position: relative;
 }
 #testimonial-slider p {
-	font-family: "raleway-medium", sans-serif;
-	font-size: 2.5rem;
-	line-height: 1.8;
-	color: #8d8d8d;
+	font-family: 'Circe', serif;
+	font-size: 20px;
+	line-height: 1.5;
+	color: black;
 }
 #testimonial-slider p::before, #testimonial-slider p::after {
 	display: inline;
