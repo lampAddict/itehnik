@@ -1167,7 +1167,6 @@ a.menu-toggle {
 	}
 }
 
-
 @media only screen and (max-width:500px) {
 	.Wallop-list {
 		min-height: 560px !important;
@@ -1184,6 +1183,41 @@ a.menu-toggle {
 	}
 }
 
+@media only screen and (max-width:700px) {
+    .Wallop-list {
+        min-height: 560px !important;
+    }
+    .form_wrap_wrap {
+        width: 0 !important;
+    }
+    .form_wrap {
+        margin: 0 auto;
+        width: 0 !important;
+    }
+    .ltnone textarea {
+        width: 434px !important;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .Wallop-list {
+        min-height: 560px !important;
+    }
+    .form_wrap_wrap {
+        width: 850px !important;
+    }
+    .form_wrap {
+        margin: 0 auto;
+        width: 650px !important;
+    }
+    .ltnone textarea {
+        width: 590px !important;
+    }
+    .row{
+        max-width: 850px !important;
+        padding: 0 15px;
+    }
+}
 /** 
  * ===================================================================
  * intro section
@@ -1249,8 +1283,8 @@ a.menu-toggle {
 .intro-content .button {
 	border-color: #FFFFFF;
 	color: #FFFFFF;
-	height: 6.6rem;
-	line-height: 6rem;
+	height: 4.4rem;
+	line-height: 4rem;
 	padding: 0 3.5rem !important;
 	margin-top: 1.8rem;
 	font-family: "raleway-heavy", sans-serif;
@@ -2525,9 +2559,10 @@ footer ul li {
 }
 .mt45{
 	margin-top: 16rem;
+    margin-bottom: 15px;
 }
 #step3{
-	max-height: 105px;
+	max-height: 125px;
 	padding: 10px;
 	background-color: #05bca9;
 }

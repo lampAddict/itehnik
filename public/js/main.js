@@ -129,6 +129,7 @@
             ,$comment = $('#comment')
             ,$btnPrev = $('.Wallop-buttonPrevious')
             ,$btnSend = $('#btnSend')
+            ,$surveyTitle = $('#surveyTitle')
         ;
 
         //contact form, send info routine
@@ -195,12 +196,14 @@
                 $email.hide();
                 $phone.hide();
                 $comment.hide();
+                $surveyTitle.fadeIn("slow");
             }else{
                 //show form elements on last page
                 $name.show();
                 $email.show();
                 $phone.show();
                 $comment.show();
+                $surveyTitle.hide();
             }
 
             if( event.detail.currentItemIndex > 0 ){
