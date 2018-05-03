@@ -446,6 +446,34 @@ textarea {
  * small mobile devices
  * --------------------------------------------------------------- 
  */
+@media screen and (max-width:330px) {
+	.row {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.row.mt45{
+		width: 300px;
+		margin: 10px;
+		margin-top: 8rem;
+	}
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	[class*="col-"] {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	[class*="col-"] + [class*="col-"]:last-child {
+		float: none;
+	}
+}
 
 @media screen and (max-width:400px) {
 	.row {
