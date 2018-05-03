@@ -2517,12 +2517,12 @@ footer ul li {
 	max-width: 800px;
 }
 .mapWrapper{
-	margin:0 auto;
-	width: 1020px;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 #contacts .bgrid p:first-child{
     margin-bottom: 0;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 #contacts a{
