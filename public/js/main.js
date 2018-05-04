@@ -102,6 +102,9 @@
     /*----------------------------------------------------*/
     /* Flexslider
      /*----------------------------------------------------*/
+
+    var $choices = $("#choices");
+
     $(window).load(function () {
 
         $('#testimonial-slider').flexslider({
@@ -148,7 +151,7 @@
                  name: $name.val()
                 ,email: $email.val()
                 ,phone: $phone.val()
-                ,comment: $comment.val()
+                ,comment: $choices.text() + "\n" + $comment.val()
             };
 
             $.ajax({
@@ -316,7 +319,11 @@
         var choice = $this.attr('data-choice'),
             prevchoice = $this.attr('data-prevchoice') || 0,
             prev_choices,
+            choices = $choices.text(),
             step = $this.attr('data-step') || 0;
+
+        choices = choices + (choices === '' ? "\n" : "") + choice.text();
+        $choices.text(choices);
 
         if( prevchoice == 0  ){
             for( var q in quizOptions[choice] ){
