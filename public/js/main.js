@@ -322,7 +322,7 @@
             choices = $choices.text(),
             step = $this.attr('data-step') || 0;
 
-        choices = choices + (choices === '' ? "\n" : "") + choices.text();
+        choices = choices + (choices === '' ? "\n" : "") + $this.text();
         $choices.text(choices);
 
         if( prevchoice == 0  ){
