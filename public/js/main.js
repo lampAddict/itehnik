@@ -258,7 +258,7 @@
     /*  Placeholder Plugin Settings
      ------------------------------------------------------*/
 
-    $('input, textarea, select').placeholder()
+    $('input, textarea, select').placeholder();
 
     /*---------------------------------------------------- */
     /*	Modal Popup
@@ -322,7 +322,7 @@
             choices = $choices.text(),
             step = $this.attr('data-step') || 0;
 
-        choices = choices + (choices === '' ? "\n" : "") + choice.text();
+        choices = choices + (choices === '' ? "\n" : "") + choices.text();
         $choices.text(choices);
 
         if( prevchoice == 0  ){
