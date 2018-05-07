@@ -18,7 +18,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="iTehnik landing page">
             <directory>tests/</directory>
         </testsuite>
     </testsuites>

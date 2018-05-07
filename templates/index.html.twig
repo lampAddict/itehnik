@@ -135,29 +135,31 @@
                         <div class="Wallop-item">
                             <div class="form_wrap_wrap">
                                 <div class="form_wrap">
-                                    <fieldset class="questions">
-                                        <ol class="ltnone">
-                                            <li>
-                                                <label for="pname">Имя</label>
-                                                <input id="pname" name="pname" type="text" placeholder="Представьтесь пожалуйста" required="">
-                                            </li>
-                                            <li>
-                                                <label for="email">Адрес электронной почты</label>
-                                                <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-                                            </li>
-                                            <li>
-                                                <label for="phone">Телефон</label>
-                                                <input id="phone" name="phone" type="tel" placeholder="+74950000000" required="">
-                                            </li>
-                                            <li>
-                                                <label for="textarea">Комментарий</label>
-                                                <textarea id="comment"></textarea>
-                                                <textarea id="choices" class="mfp-hide"></textarea>
-                                            </li>
-                                        </ol>
-                                    </fieldset>
-                                    <div id="errorMessage mfp-hide" class="errorMessage"></div>
-                                    <a id="btnSend" class="button stroke mfp-hide">Отправить</a>
+                                    <form id="feedbackForm">
+                                        <fieldset class="questions">
+                                            <ol class="ltnone">
+                                                <li>
+                                                    <label for="pname">Имя</label>
+                                                    <input id="pname" name="pname" type="text" placeholder="Представьтесь пожалуйста" required="">
+                                                </li>
+                                                <li>
+                                                    <label for="email">Адрес электронной почты</label>
+                                                    <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+                                                </li>
+                                                <li>
+                                                    <label for="phone">Телефон</label>
+                                                    <input id="phone" name="phone" type="tel" placeholder="+74950000000" required="">
+                                                </li>
+                                                <li>
+                                                    <label for="textarea">Комментарий</label>
+                                                    <textarea id="comment"></textarea>
+                                                    <textarea id="choices" class="mfp-hide"></textarea>
+                                                </li>
+                                            </ol>
+                                        </fieldset>
+                                        <div id="errorMessage mfp-hide" class="errorMessage"></div>
+                                        <button id="btnSend" class="button stroke mfp-hide">Отправить</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
