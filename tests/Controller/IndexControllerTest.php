@@ -4,6 +4,7 @@
 namespace Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 
 class IndexControllerTest extends WebTestCase
@@ -37,11 +38,20 @@ class IndexControllerTest extends WebTestCase
         $crawler = $client->click($schoice);
 
         //check if we get feedback form with submit button
-        $this->assertContains('Отправить', $crawler->filter('#btnSend:not(.mfp-hide)')->text());
+        $this->assertContains('Отправить', $crawler->filter('#btnSend')->text());
 
-        $btn = $crawler->selectButton('btnSend');
-        
-        //click on it
-        //$crawler = $client->click($btn);
+        $form = $crawler->selectButton('btnSend')->form([], "POST");
+
+        $form['name'] = 'test';
+        $form['phone'] = '8 495 562 1445';
+        $form['email'] = 'test@test.com';
+        //$form['comment'] = 'test comment';
+
+        $client->request($form->getMethod(), 'ajax_message', $form->getPhpValues(), $form->getPhpFiles());
+        $response = $client->getResponse();
+        if( $response instanceof JsonResponse ){
+            $responseData = json_decode($response->getContent());
+            $this->assertEquals(true, $responseData->result);
+        }
     }
 }
